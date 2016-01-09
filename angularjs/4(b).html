@@ -1,0 +1,12 @@
+
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>AngularJS for Everyo</title>
+	<script src="angular.min.js"></script>
+</head>
+<body ng-init="list = [{name : 'Nilutpal'  , age : 20} , {name : 'Rahul'  , age : 20} ] ">
+<ul><li ng-repeat="item in list">  {{item.name}} - <em>{{item.age}}</em> </li></ul>	
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html ng-app="directoryApp">
+<head>
+	<title>AngularJS for Everyo</title>
+	<script src="angular.min.js"></script>
+	<script src="directory.js"></script>
+</head>
+<body ng-controller="directoryController">
+<input type="text" ng-model="search">
+<ul><li ng-repeat="item in list | filter:search ">  {{item.name}} - <em>{{item.age}}</em> </li></ul>	
+<form action="">
+	<input	type="text" placeholder="Name" ng-model="name">
+	<input	type="number" placeholder="Age" ng-model="age">
+	<input	type="submit" value="Submit">
+</form>
+</body>
+</html>

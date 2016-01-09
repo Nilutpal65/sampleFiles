@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>AngularJS for Everyo</title>
+	<script src="angular.min.js"></script>
+</head>
+<body ng-init="list = [{name : 'Nilutpal'  , age : 20} , {name : 'Rahul'  , age : 26} ,{name : 'Shubham'  , age : 23} , {name : 'Bikash'  , age : 20}  ] ">
+<input type="text" ng-model="search">
+<ul><li ng-repeat="item in list | filter:search ">  {{item.name}} - <em>{{item.age}}</em> </li></ul>	
+
+</body>
+</html>
